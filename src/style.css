@@ -1,0 +1,426 @@
+/* #EC255A
+#161853
+#11113ac2 */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px, 30px;
+    font-family: 'Lato', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* navbar_CSS Start */
+
+#navbar{
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    height: 50px;
+    background-color: #36413D;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    /* margin-top: 10px;      only for logo */
+}
+[class ^= "nav_item-"] ul{
+    list-style-type: none;
+    width: 40vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav_link{
+    text-decoration: none;
+    padding: 5px 25px;
+    border: 1px solid #e0d9db;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    transition: 0.3s ease;
+    font-size: 20px;
+}
+.nav_link:hover{
+    background-color: #fff;
+    border: 2px solid #9c9b9c;
+    color: #36413D;
+    box-shadow: 0px 0px 10px 0px #9c9b9c;
+}
+.logo_main{
+    height: 50px;
+    /* width: 50px; */
+    padding: 0 20px;
+}
+.logo_main:hover{
+    transform:scale(1.2) translateY(5px);
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #ffffff;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+    padding: 0px 20px;
+}
+
+/* navbar_CSS End */
+
+/* Welcome_section*/
+
+#welcome-section{
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    /* background-image:url(../img/background_3.png), linear-gradient(to right bottom, #161853 35%, #EC255A);  linear-gradient(to right bottom, #383c81, #161853); */
+    background-image:url(../img/background_3.png), linear-gradient(to right bottom, #ffffff, #000000 55%);  /*linear-gradient(to right bottom, #383c81, #161853); */
+    background-size: cover;
+    background-attachment: fixed;  /*for fixed background or parallel effect */
+    background-position: center;
+    position: relative;
+}
+
+.welcome-part{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* text-align: center; */
+}
+.profile_box, .welcome-btn{
+    text-align: center;
+}
+
+.profile_photo-1{
+    width: 200px;
+}
+.heading_box{
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    
+}
+.heading-main{
+    display: block;
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: 45px;
+    text-transform: uppercase;
+}
+.heading-sub{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 12.6px;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-evenly;
+}
+[class ^= "logo-"]{
+    margin: 30px 0;
+    height: 20px;
+    transition: transform 0.2s;
+}
+[class ^= "logo-"]:hover{
+    /* margin: 25px 0;
+    height: 25px; */
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.btn:link, .btn:visited{
+    text-decoration: none;
+    padding: 10px 50px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: all 0.2s;
+    width: 50%;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.8);
+}
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.8);
+}
+
+.btn-cv{
+    background-color: #ffffff;
+    color: #777;
+}
+/*Welcome_section Ends */
+
+/* About_section */
+
+#about{
+    height: 90vh;
+    max-width: 100%;
+    background-color: #e9e9e9;
+    background-size: cover;
+    position: relative;
+}
+.about-container{
+    height: 70vh;
+    width: 90vw;
+    position: relative;
+    left: 5vw;
+}
+
+.profile_photo-2{
+    margin: 20px;
+    height: 400px;
+}
+.about-details{
+    position: absolute;
+    left: 600px;
+    top: 14vw;
+    color: #36413D;
+    word-spacing: 5px;
+    line-height: 1.5;
+    padding-bottom: 50px;
+}
+.email{
+    color: #36413D;
+}
+
+.about-name{
+    color: #36413D;
+    font-size: 30px;
+}
+.about-occupation{
+    font-style: italic;
+    color: #30475E;
+}
+.about_title{
+    color: #30475E;
+    font-size: 20px;
+}
+.about_sub_container{
+    margin: 40px 0;
+}
+
+/*About_section Ends */
+
+/* Project_section */
+
+#project{
+    max-width: 100%;
+    /* background-color: #888; */
+    padding-bottom: 30px;
+}
+.project_container{
+    width: 90vw;
+    position: relative;
+    left: 5vw;
+}
+#project .section_title::before{
+    content: "P";
+    transform: translateX(6.5vw);
+}
+.projects{
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+}
+[class ^= "project-"]{
+    min-height: 300px;
+    max-width: 300px;
+    background-color: #fff;
+    /* background-color: #e9e9e9; */
+    border: 1px solid #e9e9e9;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.5s;
+}
+[class ^= "project-"]:hover{
+        transform: scale(1.2);  
+        box-shadow: 5px 8px 10px #757474;
+ }
+[class ^= "project_img-"]{
+    height: 100px;
+    max-width: 300px;
+    background-color: #A1E3D8;
+}
+.project_heading{
+    color: #EC255A;
+    font-weight: 900;
+    text-align: center;
+    line-height: 2;
+}
+.project_decribtion{
+    line-height: 1.2;
+    min-height: 100px;
+    color: #30475E;
+}
+.technology{
+    list-style-type: none;
+    color: #787A91;
+    display: flex;
+    justify-content: end;
+}
+[class ^= "technology-"]{
+    margin: 10px;
+}
+.project_source_link{
+    text-align: end;
+    position: relative;
+    left: -5%;
+    bottom: 5%;
+}
+.project_source_link_icon{
+    height: 30px;
+}
+.project_source_link_icon:hover{
+    transform: scale(1.2);
+}
+
+/*Project_Section Ends */
+
+/* Art_Section */
+
+#art{
+    max-width: 100%;
+    /* background-color: #161853; */
+    background-color: #e9e9e9;
+    padding-bottom: 30px;
+}
+#art .section_title::after{
+    left: 15.5vw;
+}
+
+.art_container{
+    width: 90vw;
+    position: relative;
+    left: 5vw;
+}
+.arts{
+    margin: 50px;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-gap: 30px;
+    justify-content: center;
+}
+.unit_art{
+    height: 300px;
+    border-radius: 10px;
+}
+
+.section_title{
+    color: #EC255A;
+    font-size: 3.5vw;
+    letter-spacing: 0.8vw;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    left: -5vw;
+}
+.section_title::before{
+    content: "A";
+    display: inline-block;
+    color: #161853;
+    font-size: 10vw;
+    opacity: 0.3;
+    transform: translateX(8vw);
+}
+.section_title::after{
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 20vw;
+    background-color: #161853;
+    position: absolute;
+    left: 27vw;
+    bottom: 0;
+}
+
+@media (max-width: 1040px) {
+    .profile_photo-2{
+        height: 300px;
+    }
+    .about-details{
+        left: 300px;
+    }
+}
+@media (max-width: 720px) {
+    #navbar{
+        justify-content: space-between;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav_item-1, .nav_item-3{
+        position: fixed;
+        left: -100%;
+        background-color: transparent;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav_item-1{
+        top: 50px;
+    }
+    .nav_item-3{
+        top: 100px;
+    }
+    .nav_item-1.active, .nav_item-3.active{
+        background-color: #EC255A;
+        left: 0px;
+    }
+    .nav_item-1.active ul, .nav_item-3.active ul{
+        margin: 15px auto;
+    }
+
+
+
+    .heading-main{
+        letter-spacing: 16px;
+    }
+    .heading-sub{
+        letter-spacing: 6px;
+    }
+
+
+    #about, #about .about-container{
+        height: auto;
+    }
+    .profile_photo-2{
+        display: block;
+        margin: 20px auto;
+    }
+    .about-details{
+        position: static;
+    }
+
+}
