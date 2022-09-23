@@ -15,16 +15,17 @@ document.querySelectorAll(".nav_link").forEach(n => n.addEventListener("click", 
 }))
 
 const sendEamil = () => {
+    let name = document.getElementById("form_name").value;
+    let email = document.getElementById("form_email").value;
+    let msg = document.getElementById("form_text").value;
+
+
     Email.send({
-        Host: "smtp.gmail.com",
-        Username: "bivashchakraborty554@gmail.com",
-        Password: "khokhanmama",
-        To: 'biraj1962c@gmail.com',
-        From: document.getElementById("form_email").value,
+        SecureToken: "6d16b7b5-e9f7-47fa-ab28-f6390b9dd1fd",
+        To: 'bivashchakraborty554@gmail.com',
+        From: "hippop554@gmail.com",
         Subject: "Someone Wanted to contact you from website",
-        Body: "Name: " + document.getElementById("form_name").value
-            + "<br> Email: " + document.getElementById("form_email").value
-            + "<br> Email: " + document.getElementById("form_text").value
+        Body: "Name: " + name + "<br> Email: " + email + "<br> Message: " + msg
     }).then(
         message => alert(message)
     );
