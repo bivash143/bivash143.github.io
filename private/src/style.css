@@ -183,7 +183,7 @@ button:focus {
     display: block;
     font-size: 80px;
     font-weight: 400;
-    letter-spacing: 45px;
+    letter-spacing: 36px;
     text-transform: uppercase;
 }
 
@@ -191,7 +191,7 @@ button:focus {
     display: block;
     font-size: 20px;
     font-weight: 700;
-    letter-spacing: 12.6px;
+    letter-spacing: 10.6px;
 }
 
 .logos {
