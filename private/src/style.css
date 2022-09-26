@@ -503,7 +503,7 @@ button:focus {
 #contact p {
     text-align: center;
     font-weight: normal;
-    margin: 10px 0 0 0;
+    margin: 50px 0 0 0;
     color: #886F6F;
     font-size: 1.2rem;
 }
@@ -624,13 +624,11 @@ button:focus {
 /* Conact_Section Ends */
 
 @media (max-width: 1040px) {
-    .profile_photo-2 {
-        height: 300px;
-    }
 
     .profile_photo-2 {
         display: block;
         margin: 20px auto;
+        height: 300px;
     }
 
     .about-details {
@@ -652,6 +650,16 @@ button:focus {
 }
 
 @media (max-width: 720px) {
+
+    .sub_detail_heading,
+    .sub_detail_info,
+    .project_decribtion,
+    .about-details,
+    #contact p,
+    .container-box .sub_heading h3 {
+        font-size: 1rem;
+    }
+
     #navbar {
         justify-content: space-between;
     }
@@ -706,6 +714,10 @@ button:focus {
         box-shadow: none;
     }
 
+    .profile_photo-1 {
+        width: 140px;
+    }
+
     .heading-main {
         letter-spacing: 9px;
         font-size: 76px;
@@ -715,6 +727,18 @@ button:focus {
         /* letter-spacing: 6px; */
         letter-spacing: 4px;
         text-align: center;
+    }
+
+    .about-name {
+        font-size: 19px;
+    }
+
+    .about-occupation {
+        font-size: 12px;
+    }
+
+    .profile_photo-2 {
+        height: 200px;
     }
 
     [class ^="project-"] {
