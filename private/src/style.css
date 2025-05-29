@@ -712,6 +712,7 @@ button:focus {
     .nav_item-1.active ul,
     .nav_item-3.active ul {
         margin: 15px auto;
+        justify-content: center;
     }
 
     .welcome-part {
